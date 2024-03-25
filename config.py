@@ -2,14 +2,13 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6548729659:AAFg-hmki_fXzNCt9nRLsCQhtr5TGzRMq9c")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     # The Telegram API things
-    APP_ID = int(os.environ.get("APP_ID", 29002304))
-    API_HASH = os.environ.get("API_HASH"94e59f4efbb74820d043de101f6adc6d
-)
+    APP_ID = int(os.environ.get("APP_ID", ))
+    API_HASH = os.environ.get("API_HASH")
     # Get these values from my.telegram.org
     # Array to store users who are authorized to use the bot
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "6139556802").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
@@ -30,4 +29,4 @@ class Config(object):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     #Admin id is stored in 
-    LAZY_DEVELOPER = set(int(x) for x in os.environ.get("LAZY_ADMIN", "6139556802").split())
+    LAZY_DEVELOPER = set(int(x) for x in os.environ.get("LAZY_ADMIN", "").split())
